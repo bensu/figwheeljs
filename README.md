@@ -3,6 +3,8 @@
 Surprisingly, figwheel can be used to develop pure JavaScript and
 have the same, amazing, experience we currently have in ClojureScript.
 
+You can see a quick video demo [here](https://www.youtube.com/watch?v=Y0ulIVLbuX8).
+
 This project serves as an example. Clone it, run figwheel, and then
 visit localhost:
 
