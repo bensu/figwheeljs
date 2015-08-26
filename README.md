@@ -1,39 +1,31 @@
-# js-only
+# figwheeljs 
 
-FIXME: Write a one-line description of your library/project.
+Surprisingly, figwheel can be used to develop pure JavaScript and
+have the same, amazing, experience we currently have in ClojureScript.
 
-## Overview
+This project serves as an example. Clone it, run figwheel, and then
+visit localhost:
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+    git clone https://github.com/bensu/figwheeljs
+    rlwrap lein figwheel dev
+    
+Open http://localhost:3449/
 
-## Setup
+Then go to `src/figwheeljs/core.js` edit it and watch it reload.
 
-To get an interactive development environment run:
+This is not meant for anybody to use it, we just discovered it and we
+had fun testing it's limits. So far I've found the following: 
 
-    lein figwheel
+* You need to use Google Closure Modules, `goog.provide` and
+  `goog.require`.
+* The namespaces can't have hyphens.
 
-and open your browser at [localhost:3449](http://localhost:3449/).
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
-
-    (js/alert "Am I connected?")
-
-and you should see an alert in the browser window.
-
-To clean all compiled files:
-
-    lein clean
-
-To create a production build run:
-
-    lein cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
+I find this is a testament to ClojureScript and Figwheel's great
+design. Nobody planned this to work but a good design surprises you in
+pleasant ways :) Kudos to @bhauman!
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2015 Bruce Hauman and Sebastian Bensusan 
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
