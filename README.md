@@ -9,7 +9,7 @@ visit localhost:
     git clone https://github.com/bensu/figwheeljs
     rlwrap lein figwheel dev
     
-Open http://localhost:3449/
+Open [http://localhost:3449/](http://localhost:3449/)
 
 Then go to `src/figwheeljs/core.js` edit it and watch it reload.
 
